@@ -10,24 +10,10 @@ public class Main {
 
         String[] array = names.split(" ");
         System.out.println(names);
-        balancedTree(array);
+        tree.tree(array);
 
         System.out.println("orden inverso: ");
         tree.inOrder();
 
     }
-
-    public static void balancedTree(String[] array){
-
-        int center= (array.length-1)/2;
-
-        tree.add(new Node(array[center]));
-
-        for (int i  = 0; i< array.length;i++){
-            tree.add(new Node(array[i]));
-        }
-    }
-
-
-
 }
